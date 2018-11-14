@@ -1,4 +1,4 @@
-ipcrm/pl_generic_site:
+bmcgehee/pl_generic_site:
   Build:
     - zip -r pl_generic_site.zip .
   PkgInclude:
