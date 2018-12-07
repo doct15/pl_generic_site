@@ -3,6 +3,7 @@ bmcgehee/pl_generic_site:
     - zip -r pl_generic_site.zip .
   PkgInclude:
     - pl_generic_site.zip
+    - unzip.exe
   PreInstall:
     - echo "Enabling Features...."
     - powershell.exe -Command "Enable-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole | Out-null"
