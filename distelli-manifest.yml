@@ -19,7 +19,7 @@ bmcgehee/pl_generic_site:
   PostInstall:
     - echo "Extracting Source...."
     #- powershell.exe -Command "Expand-Archive -Path ./pl_generic_site.zip -DestinationPath 'C:/inetpub/wwwroot'"
-    - unzip ./pl_generic_site.zip C:\inetpub\wwwroot
+    - unzip ./pl_generic_site.zip -d C:\inetpub\wwwroot
   Start:
     - echo "Re-Starting Default Web Site..."
     - powershell.exe -Command "start-website 'Default Web Site'"
